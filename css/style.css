@@ -1,0 +1,415 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+input{
+    box-sizing: border-box;
+}
+ul,ol,li,a,a:hover,a:focus,a:visited,a:link,button{
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6,p,span,strong,small{
+    padding: 0;
+    margin: 0;
+}
+.wrapper{
+    width: 80%;
+    margin: auto;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    position: relative;
+    text-rendering: optimizeLegibility;
+}
+h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 2.4rem;
+    color: #393939;
+    text-transform: uppercase;
+    margin: 8rem 0 1rem 0;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+/* reuseable css */
+
+/* header part start */
+#home{
+    background: url(../images/bg.jpg) no-repeat center;
+    background-size: cover;
+}
+#home .header_part{
+    background: rgba(255, 255, 255, 0.6);
+}
+#home .header_part .support_icon{
+    width: 100%;
+    padding-top: .5rem;
+}
+#home .header_part .support_icon ul{
+    text-align: right;
+}
+#home .header_part .support_icon ul li{
+    display: inline-block;
+}
+#home .header_part .support_icon ul li:nth-child(2){
+    margin-right: 2rem;
+}
+#home .header_part .support_icon ul li a > i{
+    font-size: 1.8rem;
+    color: #a0a0a0;
+}
+#home .header_part .support_icon ul li a > p{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #ea2e49;
+    text-transform: uppercase;
+    padding: 1rem .5rem;
+}
+#home .header_part .menubar{
+    margin-top: 1.5rem;
+}
+#home .header_part .menubar:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#home .header_part .menubar .company_logo{
+    float: left;
+    width: 20%;
+}
+#home .header_part .menubar .company_logo img{
+    width: auto;
+    margin-top: 1.2rem;
+}
+#home .header_part .menubar .menu{
+    float: left;
+    width: 80%;
+}
+#home .header_part .menubar .menu ul{
+    text-align: right;
+}
+#home .header_part .menubar .menu ul li{
+    display: inline-block;
+}
+#home .header_part .menubar .menu ul li:last-child a{
+    padding: .9rem 1.2rem;
+    background: #ea2e49;
+    color: #fff;
+}
+#home .header_part .menubar .menu ul li a{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 2.2rem;
+    color: #313131;
+    text-transform: uppercase;
+    padding: .9rem 1.2rem;
+    display: inline-block;
+    transition: all linear 0.3s;
+}
+#home .header_part .menubar .menu ul li a.active{
+    color: #ea2e49;
+}
+#home .header_part .menubar .menu ul li a:hover, #home .header_part .menubar .menu ul li a:focus{
+    color: #ea2e49;
+}
+#home .header_part .menubar .menu ul li:last-child a:hover, #home .header_part .menubar .menu ul li:last-child a:focus{
+    color: #fff;
+}
+#home .header_part .menubar .sidebtn{
+    display: none;
+}
+.icons .social_icon{
+    position: fixed;
+    top: 10.5rem;
+    right: 0;
+}
+.icons .social_icon ul li a{
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 2rem;
+    background: #484848;
+    color: #fff;
+    margin-top: .2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear 0.2s;
+}
+.icons .social_icon ul li a:hover{
+    background: #ea2e49;
+}
+.banner_part .banner_background{
+    background: url(../images/banner.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 75vh;
+}
+/* header part start */
+/* bottom menu start */
+.bottom_menu .bottom_menubar{
+    height: 5rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    grid-column-gap: 0.2rem;
+}
+.bottom_menu .bottom_menubar .bottom_menu_item{
+    background: #ea2e49;
+    height: 100%;
+    width: 100%;
+    transition: all linear 0.3s;
+}
+.bottom_menu .bottom_menubar .bottom_menu_item a{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 2.4rem;
+    color: #fff;
+    line-height: 5rem;
+}
+.bottom_menu .bottom_menubar .bottom_menu_item:hover{
+    background: #e2203c;
+}
+/* bottom menu end */
+/* latest product start */
+.latest_product .product_column{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    grid-column-gap: 2rem;
+}
+.latest_product .product_column .product_item{
+    height: 34rem;
+    background: #efeff8;
+    text-align: center;
+}
+.latest_product .product_column .product_item .product_shape{
+    width: 100%;
+    height: 80%;
+}
+.latest_product .product_column .product_item h5{
+    font-family: 'Lato', sans-serif;
+    color: #222;
+    font-size: 1.4rem;
+    padding-top: 1rem;
+    font-weight: 400;
+}
+.latest_product .product_column .product_item p{
+    font-family: 'Bebas Neue', sans-serif;
+    color: #ea2e49;
+    font-size: 1.6rem;
+    padding-top: 1.5rem;
+    font-weight: 600;
+    display: inline-block;
+}
+/* latest product end */
+/* new & feature start */
+.new_feature .feature_grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    grid-column-gap: 2rem;
+}
+.new_feature .new_section .new_column{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    grid-column-gap: 2.5rem;
+}
+.new_feature .new_section .new_column .new_item{
+    height: 34rem;
+    background: #efeff8;
+    text-align: center;
+}
+.new_feature .new_section .new_column .new_shape{
+    width: 100%;
+    height: 80%;
+}
+.new_feature .new_section .new_column .new_item h5{
+    font-family: 'Lato', sans-serif;
+    color: #222;
+    font-size: 1.4rem;
+    padding-top: 1rem;
+    font-weight: 400;
+}
+.new_feature .new_section .new_column .new_item p{
+    font-family: 'Bebas Neue', sans-serif;
+    color: #ea2e49;
+    font-size: 1.6rem;
+    padding-top: 1.5rem;
+    font-weight: 600;
+    display: inline-block;
+}
+.new_feature .feature_section .feature_img{
+    width: 100%;
+    height: 34rem;
+}
+/* new & feature end */
+/* different start */
+.different_banner{
+    margin-top: 10rem;
+    background: url(../images/bg2.png) no-repeat center;
+    background-size: cover;
+}
+.different_banner .different_column{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 5rem;
+    justify-content: space-between;
+}
+.different_banner .different_column .different_item{
+    width: auto;
+}
+.different_banner .different_column .different_item h3{
+    font-family: 'Bebas Neue', sans-serif;
+    color: #393939;
+    font-size: 5rem;
+    letter-spacing: .3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.different_banner .different_column .different_item span{
+    font-family: 'Bebas Neue', sans-serif;
+    color: #ea2e49;
+    font-size: 5rem;
+    letter-spacing: .4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.different_banner .different_column .different_item .different_img{
+    width: 100%;
+    height: 100%;
+}
+.different_banner .different_column .different_item h4{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    color: #393939;
+    margin-bottom: .5rem;
+}
+.different_banner .different_column .different_item p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: #393939;
+    margin-bottom: 1rem;
+}
+.different_banner .different_column .different_item p > strong{
+    color: #ea2e49;
+}
+/* different end */
+/* cultural start */
+.cultural_program{
+    padding-bottom: 4rem;
+}
+.cultural_program .cultural_news_fb{
+    display: grid;
+    grid-template-columns: 25% 40% 30%;
+    justify-content: space-between;
+}
+.cultural_program .cultural_news_fb .cnf_item{
+    height: auto;
+}
+.cultural_program .cultural_news_fb .cnf_item1 > .cnf_column{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: .5rem;
+}
+.cultural_program .cultural_news_fb .cnf_item2 .cnf_content .events{
+    height: 6.5rem;
+    border: 1px solid #ebebeb;
+    display: grid;
+    margin-bottom: .5rem;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+    grid-column-gap: 1rem;
+    transition: all linear 0.3s;
+    cursor: pointer;
+}
+.cultural_program .cultural_news_fb .cnf_item2 .cnf_content .events:hover{
+    background: #f4f4f4;
+    color: #ea2e49;
+}
+.cultural_program .cultural_news_fb .cnf_item2 .cnf_content .events:hover p{
+    color: #ea2e49;
+}
+.cultural_program .cultural_news_fb .cnf_item2 .cnf_content .events img{
+    width: 6.5rem;
+    height: 6.5rem;
+}
+.cultural_program .cultural_news_fb .cnf_item2 .cnf_content .events p{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 6.5rem;
+    text-transform: capitalize;
+    color: #393939;
+}
+.cultural_program .cultural_news_fb .cnf_item3 .cnf_column_img{
+    height: 60%;
+}
+/* cultural end */
+/* contact part start */
+.contact_part{
+    background: url(../images/bg3.png) no-repeat center;
+    background-size: cover;
+    padding: 4rem 0;
+}
+.contact_part .contact_grid{
+    display: grid;
+    grid-template-columns: auto auto auto 
+    auto auto auto;
+    justify-content: space-between;
+    grid-column-gap: 1rem;
+}
+.contact_part .contact_grid .contact_option h3{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.3rem;
+    color: #fff;
+    font-weight: 100;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+.contact_part .contact_grid .contact_option a{
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #d4d4d4;
+    line-height: 2.2rem;
+    text-transform: capitalize;
+}
+.contact_part .contact_grid .contact_option a:hover{
+    text-decoration: underline;
+}
+.contact_part .contact_grid .contact_option p{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #d4d4d4;
+    margin-top: 2rem;
+}
+/* contact part end */
+/* footer start */
+.last_line{
+    background: #c00a24;
+}
+.last_line h3{
+    padding: 1.5rem 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #c6c6c6;
+}
+/* footer end */

@@ -128,7 +128,7 @@
         display: none;
     }
     .banner_part .banner_background{
-        height: 50vh;
+        height: 45vh;
     }
     #home .header_part .menubar{
         margin-top: 1rem;
@@ -254,6 +254,7 @@
     }
     .banner_part .banner_background{
         height: 32vh;
+        background-position: center top;
     }
     .bottom_menu .bottom_menubar{
         height: 15rem;

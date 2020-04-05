@@ -210,7 +210,8 @@
         text-align: center;
     }
     .banner_part .banner_background{
-        height: 40vh;
+        height: 60vh;
+        background-position: center top;
     }
     .bottom_menu .bottom_menubar .bottom_menu_item a{
         line-height: 4rem;

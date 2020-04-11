@@ -37,7 +37,6 @@
         width: 100% !important;
         height: 31rem;
         display: none;
-        transition: all linear 0.3s;
         padding: 1rem 0;
     }
     #home .header_part .menubar .toggle{
